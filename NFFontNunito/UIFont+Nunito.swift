@@ -52,7 +52,7 @@ extension UIFont {
 
 public extension UIFont {
 
-    public static func registerFont(withFilenameString filenameString: String, bundle: Bundle) {
+    static func registerFont(withFilenameString filenameString: String, bundle: Bundle) {
 
         guard let pathForResourceString = bundle.path(forResource: filenameString, ofType: nil) else {
             print("UIFont+:  Failed to register font - path for resource not found.")
